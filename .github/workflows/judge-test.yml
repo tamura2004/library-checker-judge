@@ -3,7 +3,7 @@ name: Judge-Test-GCE
 on:
   push:
     branches:
-      - test/ci
+      - patch/ci
 
 jobs:
   judge-test:
