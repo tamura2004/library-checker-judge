@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - id: install crun
+    - id: install-crun
       name: Install crun
       run: ./packer/crun-install.sh
