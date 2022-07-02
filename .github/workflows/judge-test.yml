@@ -1,4 +1,4 @@
-name: Judge-Test-GCE
+name: Judge-Test
 
 on:
   push:
@@ -12,12 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - id: build-docker-images
-      name: Build docker images
-      run: ./build.sh      
-      working-directory: ./langs
-
-    - id: judge-test
-      name:	Run judge test
-      run: go test -v .
-      working-directory: ./judge
+    - id: install crun
+      name: Install crun
+      run: ./packer/crun-install.sh
