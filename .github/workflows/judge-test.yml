@@ -14,4 +14,4 @@ jobs:
     
     - id: install-crun
       name: Install crun
-      run: ./packer/crun-install.sh
+      run: sudo ./packer/crun-install.sh
